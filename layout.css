@@ -1,0 +1,241 @@
+
+.cluster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > *{
+    margin: 0.5rem;
+}
+
+.clusterforbuttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.stack > * + *{
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    flex-basis: 40rem;
+    flex-grow: 1;
+}
+
+.not-sidebar{
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;  
+    margin-top: 0;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid_box{
+    display: grid;
+    height: 130vh;
+    grid-template-columns: 20% 26.6% 26.6% 26.6%;
+    grid-template-rows: 10% 45% 45% ;
+    grid-template-areas: 
+    "product_sidebar information_bar information_bar information_bar"
+    "product_sidebar content1 content2 content3"
+    "product_sidebar content4 content5 content6";
+}
+
+.product_sidebar{
+    grid-area:product_sidebar;
+}
+
+.information_bar{
+    grid-area:information_bar;
+}
+.content1{
+    grid-area: content1;
+}
+.content2{
+    
+    grid-area: content2;
+}
+.content3{
+   
+    grid-area: content3;
+}
+.content4{
+    
+    grid-area: content4;
+}
+.content5{
+    
+    grid-area: content5;
+}
+.content6{
+   
+    grid-area: content6;
+}
+
+
+
+@media only screen and (max-width:680px){
+    .grid_box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "product_sidebar"
+        "information_bar"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6";
+    }
+}
+
+@media only screen and (max-width:870px ) and (min-width:680px){
+    .grid_box{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 0.4fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "product_sidebar infrormation_bar information_bar"
+        "product_sidebar content1 content2"
+        "product_sidebar content3 content4"
+        "product_sidebar content5 content6"
+        ;
+    }
+}
+
+.grid2{
+    display: grid;
+    height: 100vh;
+    gap: 0.5rem;
+    grid-template-columns: 5% 22.5% 22.5% 50%;
+    grid-template-rows: 22% 10% 42% 44%;
+    grid-template-areas: 
+    "gap product_title product_title product_img"
+    "gap add_cart save product_img"
+    "gap product_features product_features product_img"
+    "gap similar_product1 similar_product2 product_img";
+}
+
+.product_title{
+    grid-area: product_title;
+}
+
+.product_img{
+    grid-area: product_img;
+}
+
+.add_cart{
+    grid-area: add_cart;
+}
+
+.save{
+    grid-area: save;
+}
+
+.product_features{
+    grid-area: product_features;
+}
+
+.similar_product1{
+    grid-area: similar_product1;
+}
+
+.similar_product2{
+    grid-area: similar_product2;
+}
+
+@media only screen and (max-width:1040px){
+    .grid2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 0.1fr 0.2fr 0.6fr 0.8fr 0.8fr ;
+        grid-template-areas: 
+        "product_title product_title"
+        "product_img product_img"
+        "gap gap"
+        "add_cart save"
+        "product_features product_features"
+        "similar_product1 similar_product1"
+        "similar_product2 similar_product2";
+    }
+} 
+
+.sml_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 1rem;
+    background-color:#F8F8F8;
+    box-shadow: 0px 3px 3px #8197A2;
+    padding: 1rem;
+    grid-template-areas: 
+    "feature_title feature_title feature_title"
+    "feature1 feature2 feature3"
+}
+
+.feature_title{
+    grid-area: feature_title;
+}
+.feature1{
+    grid-area: feature1;
+}
+.feature2{
+    grid-area:feature2;
+
+}
+.feature3{
+    grid-area:feature3;
+}
+
+
+.checkout_grid{
+    display: grid;
+    height: 90vh;
+    gap: 1rem;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    grid-template-rows: 1fr;
+    margin-left: 3rem;
+    margin-right: 4rem;
+    grid-template-areas: 
+    "details payment review";
+}
+
+.details{
+    grid-area: details;
+}
+.payment{
+    grid-area:payment;
+}
+.review{
+    grid-area: review;
+}
+
+@media only screen and (max-width:1200px){
+    .checkout_grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "details"
+        "payment"
+        "review";
+    }
+} 
+

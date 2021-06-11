@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root{
+
+font-family: 'Raleway', sans-serif;
+--text-base-size: 2rem;
+
+--text-scale-ratio: 1.2;
+--text-xxl: 44px;
+--text-xl: 32px ;
+--text-lg: 20px;
+--text-md:16px;
+--text-sml: 12px;
+}
+
+body{
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--colour-primary);
+    margin-left: 5em;
+    margin-right: 2em;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+
+.h1{
+    font-size: var(--text-xxl);
+    color: var(--color--background);
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+h2{
+    font-size: var(--text-xl);
+    color: var(--color--background);
+    letter-spacing: 2px;
+    font-style: bold;
+}
+    
+
+.h3{
+    font-size:var(--text-lg);
+    color: var(--color--textdark);
+    font-style: bold;
+    margin: 1rem;
+}
+
+.h3_2{
+    color: var(--color--background);
+    margin-top: 1rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.p{
+    font-size:var(--text-md);
+    color: var(--color--textdark);
+    margin-left: 1rem;
+}
+
+.p_bold{
+    font-size: var(--text-lg);
+    color: var(--color--textdark);
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.h4{
+    color: var(--color-purple-dark);
+    font-weight: 600;
+    font-size: var(--text-xxl);
+    margin-top: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+.h4_2{
+    color: var(--color-purple-dark);
+    font-weight: 600;
+    font-size: var(--text-xl);
+    letter-spacing: 0.1rem;
+}
+
+.h5{
+    color: var(--color-secondary);
+    font-weight: 550;
+    font-size: var(--text-xl);
+    letter-spacing: 0.1rem;
+    margin-top: 1.0rem;
+    margin-bottom: 0.5rem;
+}
+
+.h6{
+    color: var(--color-btn);
+    font-weight: 550;
+    font-size: 24px;
+    margin: 1rem;
+}

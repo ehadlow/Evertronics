@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evertronics</title>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    
+</head>
+
+
+<body class="background_image" background="img/background22.png">
+    
+    <header>
+        <nav class="cluster">
+           <div class="nav_navigation cluster">
+                <a href="#"><img src="img/logo.svg" alt="three triangles shaped to make at 'E'" class="logo"></a>
+               <ul class="cluster">
+                   <li><a class="btn" href="index.html">Home</a></li>
+                   <li><a class="btn" href="products.html">Products</a></li>
+                   <li><a class="btn" href="#">Contact </a></li>
+                   <li><a class="btn" href="#">About </a></li>
+               </ul>
+              
+            </div>
+           <a href="cart.html"><img src="img/cart-logo.svg" alt="Cart icon" class="cart-logo"></a>
+           
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout_grid">
+            <element class="details checkout_container"> <!--Column 1 for checkout details-->
+                    <div class="checkout_header">Details & Address</div>
+                    <p class="p">Your email address:</p>
+                    <br>
+                    <input class="checkout_item" type="text" name="email" placeholder="Email address*">
+                    <br>
+                    <p class="p">Shipping Address</p>
+                    <input class="checkout_item" id="First_Name" type="text" name="First_Name" placeholder="First Name*">
+                    <input class="checkout_item" type="text" name="Last_Name" placeholder="Last Name*">
+                    <input class="checkout_item" type="number" name="telephone number" placeholder="Telephone Number">
+                    <input class="checkout_item" type="text" name="country" placeholder="Country">
+                    <input class="checkout_item" type="text" name="state" placeholder="State">
+                    <input class="checkout_item" type="text" name="address line 1" placeholder="Address Line 1">
+                    <input class="checkout_item" type="text" name="suburb" placeholder="suburb">
+                    <input class="checkout_item" type="number" name="postcode" placeholder="Postcode">
+            </element>
+
+            <element class="payment checkout_container"> <!--Column 2 for card details-->
+                <div class="checkout_header">Payment</div>
+                <div class="flex_container">
+                    <input type="radio" id="card"><img src="img/visa.svg"><img src="img/mastercard.svg"><img src="img/americanexpress.svg"><p class="p">Credit Card</p>
+                </div>
+                <input class="checkout_item" type="number" name="card number" placeholder="Card Number">
+                <input class="checkout_item" type="text" name="Expiry" placeholder="Expiry MM/YY">
+                <input class="checkout_item" type="text" name="Cardholder Name" placeholder="Cardholder Name">
+                <br><br><br><br>
+                <div class="flex_container">
+                    <input type="radio" id="card"><img src="img/paypal.svg"><p class="p">PayPal</p>
+                </div>
+            </element>
+
+            <element class="review checkout_container"> <!--Column 3 for review-->
+                <div class="checkout_header">Review</div>
+                <div class="checkout_review">
+                    <img class="review_img" src="img/productimgs/product1.jpeg" alt="Socket Processor">
+                    <div class="stack">
+                        <p class="p_bold"> Socket Processor</p>
+                        <br>
+                        <p class="p">$599.00</p>
+                        <p class="p"> Quantity: 1</p>
+                    </div>
+                </div>
+                <br><br>
+                <img src="img/linebreak.svg">
+                <br>
+                <input class="checkout_item" type="text" name="coupon" placeholder="Coupon Code">
+                <br>
+                <img src="img/linebreak.svg">
+                <br>
+                <div class="space_between">
+                    <h6 class="h6">Subtotal: $599.00</h6>
+                </div><br>
+                <img src="img/linebreak.svg">
+                <br>
+                <div class="button button_checkout">Place Order</div>
+            </element>
+        </div>
+
+    </main>

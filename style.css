@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import "colors.css";
+@import "typography.css";
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+
+.background_image{
+    background-repeat: no-repeat;
+}
+
+
+nav{
+    margin-top: 1em;
+    font-size: var(--text-md);
+}
+
+
+header{
+    background-color: #AAC7D5;
+}
+
+.logo{
+    width: 10rem; 
+}
+
+.cart-logo{
+    width: 4rem;
+   
+}
+
+.mouseimg{
+    max-width:15rem ;
+    max-height: 12rem;
+}
+
+.review_img{
+    max-width: 160px;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.top_seller_container_img{
+    max-height:12rem ;
+    margin: 20px 30px 0 0;
+    object-fit: contain;
+    align-self: flex-end;
+}
+
+.large_product_img{
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    padding-top: 3rem;
+    margin: 0.5rem;
+}
+
+.btn{
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color-btn);
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 10rem;
+    height: 2rem;
+    border: unset;
+    text-align: center;
+    border-radius: 0px;
+    box-shadow: unset;
+    color:white;
+    font-weight: bold;
+    font-size: 24px;  
+  }
+
+.button_checkout{
+    background-color: var(--color-purple);
+    font-size: var(--text-xl);
+    font-weight: 550;
+    align-items: center;
+    max-width: 22.4rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.button_checkout:hover{
+    background-color: var(--color-purple-dark);
+}
+
+.button-shadow{
+    background-color:var(--color-primary);
+    box-shadow: 5px 5px 0px 0px var(--color-primary-dark);
+    transition: all 0.2s ease-in-out;
+    color:var(--color--background);
+    padding: 5px 5px 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+.button-shadow:hover{
+    box-shadow: 1px 1px 0px 0px var(--color-primary-dark);
+    transition: all 0.2s ease-in-out;
+  }
+
+.button-shadow-dark{
+    background-color:var(--color-secondary);
+    box-shadow: 5px 5px 0px 0px var(--color-secondary-dark);
+    color: var(--color--background);
+    padding:5px 5px 5px ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.button-shadow-dark:hover{
+    box-shadow: 1px 1px 0px 0px var(--color-secondary-dark);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.button_shadow_sml{
+    width: 12rem;
+    height: 2rem;
+    font-size: var(--text-lg);
+}
+
+.button_product{
+    max-width:15rem;
+    height: 2.2rem;
+    font-size: var(--text-lg);
+    margin-top: 0rem;
+}
+
+.top_seller_container{
+    background-color: var(--color-purple);
+    padding: 20px 20px 1px;
+    max-width: 30rem;
+    height: 12rem;
+    display: flex;
+    box-shadow: 15px 15px 0px 0px var(--color-secondary-dark);
+    align-content: center;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.top_seller_box_text{
+   flex: 1 1 auto;
+}
+
+.button_container{
+    display: flex; 
+}
+
+
+.homepage_button_margins{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+a:link{
+    text-decoration: none;
+    color: var(--color--background);
+}
+
+
+/* styles from here are for product page*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color--background);
+    box-shadow: 0px 3px 6px;
+    max-width: 15%;
+    color:var(--color-secondary);
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5px;
+    padding: 1em 1em 1em; 
+    height: auto;
+    min-width: 150px;
+}
+
+
+.brand_square{           /* styling for the squares to select brands*/
+    width: 20px;
+    height: 20px;
+    background-color: var(--color--background);
+    box-shadow: 3px 3px 0 0 #AAC7D5;
+    border-style: solid;
+    border-color: var(--color-purple-dark);
+    border-width: 2px;
+    display: flex;
+}
+
+.table{     /*table properties for the product listing page, for the brands and item availability*/ 
+    padding: 10px;
+    text-align: left;
+    border-spacing: 50rem;
+    font-size: var(--text-md);
+    
+    
+}
+
+
+.sale_item{
+    display: flex;
+    flex-flow: column;
+    background-color: var(--color--background);
+    box-shadow: 0px 3px 3px;
+    max-width: 200px;
+    align-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5px;
+    max-height: 420px;
+}
+
+.sale_item_similar{
+    background-color: var(--color-purple);
+    box-shadow: 15px 15px 0px 0px var(--color-secondary-dark);
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--color--background);
+}
+
+
+.list{
+    color: var(--color-accent);
+    font-size: 18px;
+    font-weight: 500;
+    list-style-type: disc;
+}
+.list_item{
+    margin-bottom: 1.7rem;
+    margin-top: 1.7rem;
+}
+
+/*elemts and styling for checkout page parts*/
+
+.checkout_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--color--background);
+    box-shadow: 0px 3px 3px #8197A2;
+    margin: 1rem;
+}
+
+.checkout_header{
+    background-color: var(--color-secondary-dark);
+    color: var(--color--background);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.checkout_item{
+    background-color: var(--color--background-dark);
+    padding: 0.5rem;
+    border: none;
+    margin: 0.4rem;
+    color: #9AB6C3;
+    font-family: 'Raleway';
+}
+
+
+.checkout_review{
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+    max-height: auto;
+}
+
+.checkout_review_cart{
+    justify-content: flex-start;
+    max-width: 100%;
+    background-color: var(--color--background);
+    box-shadow: 0px 3px 3px #8197A2;
+    padding: 1rem;
+    margin:none;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+
+
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    max-height: 20px;
+    padding: 0.2rem;
+    
+}
+
+
+.spacing{
+    justify-content: space-between;
+}
+
+
+/*cart page containers*/
+
+.cart_item{
+    background-color: var(--color--background);
+    box-shadow: 0px 3px 3px #8197A2;
+}
+
+.cart_page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
